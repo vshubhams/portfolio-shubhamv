@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #646464;
+}
+.wrapper{
+    border: solid #c7c7c7 1px;
+}
+.container{
+    display: flex;
+    padding: 0 30px;
+    height: 60px;
+    align-items: center;    
+    justify-content: space-between;
+}
+.left>div{
+    font-size: 30px;
+    font-weight: 300;
+}
+.right{
+    display: flex;
+}
+.right>div{
+    margin: 0 10px;
+}

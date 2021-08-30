@@ -1,9 +1,11 @@
 import './App.css';
-import "bootstrap/dist/css/bootstrap.min.css"
+import { Navbar } from './Components/Navbar/Navbar';
+import { Profile } from './Components/Profile/Profile';
 function App() {
   return (
     <div className="App">
-      <h1>shubham</h1>
+      <Navbar />
+      <Profile />
     </div>
   );
 }
