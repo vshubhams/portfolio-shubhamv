@@ -23,6 +23,9 @@
 .right{
     display: flex;
 }
+.right>div{
+    letter-spacing: 1px;
+}
 @media only screen and (max-width: 600px) {
     .right{
      display: none;

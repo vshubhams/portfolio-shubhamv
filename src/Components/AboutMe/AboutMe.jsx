@@ -1,4 +1,9 @@
 import styles from "./aboutMe.module.css";
+import IconButton from "@material-ui/core/IconButton";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import { Technologies } from "./Technologies/Technologies";
 
 export const AboutMe = () => {
   return (
@@ -13,12 +18,24 @@ export const AboutMe = () => {
               front-end and back-end and have an eye for performance an
               accuracy.
             </p>
+            <div className={styles.iconBox}>
+              <IconButton  className={styles.linkedIn} >
+                <LinkedInIcon/>
+              </IconButton>
+              <IconButton className={styles.gitHub}>
+                <GitHubIcon />
+              </IconButton>
+              <IconButton className={styles.twitter}>
+                <TwitterIcon />
+              </IconButton>
+            </div>
           </div>
         </div>
         <div className={styles.imgBox}>
           <img src="/mern.png" alt="" />
         </div>
       </div>
+      <Technologies />
     </div>
   );
 };

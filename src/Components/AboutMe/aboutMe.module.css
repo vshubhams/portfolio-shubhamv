@@ -1,34 +1,51 @@
-.wrapper{
-    border: solid #e7e7e7 1px;
-    background-color: #FAFAFA;
-    margin-bottom: 30px;
+.wrapper {
+  border: solid #e7e7e7 1px;
+  background-color: #fafafa;
+  margin-bottom: 30px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 50% 40%;
-    justify-content: center;
-    max-width: 1250px;
-    margin: auto;
+.container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  justify-content: center;
+  max-width: 1250px;
+  margin: auto;
 }
-.container>div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    /* border: solid red; */
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* border: solid red; */
 }
-.imgBox>img{
-    width: 50%;
+.imgBox > img {
+  width: 50%;
 }
-.textBox>h2{
-    margin-bottom: 10px;
+.textBox > h2 {
+  margin-bottom: 10px;
+}
+.iconBox {
+  margin-top: 20px;
+}
+.linkedIn svg {
+  fill: #0a66c2;
+}
+.gitHub svg {
+  fill: #24292f;
+}
+.twitter svg {
+  fill: #1d9bf0;
 }
 @media only screen and (max-width: 600px) {
-    .container{
-     grid-template-columns: 100%;
-    }
-    .imgBox>img{
-        width: 30%;
-    }
+  .container {
+    grid-template-columns: 100%;
+  }
+  .imgBox > img {
+    width: 30%;
+  }
+  .iconBox {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
