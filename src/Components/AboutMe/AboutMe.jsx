@@ -12,6 +12,7 @@ export const AboutMe = () => {
         <div>
           <div className={styles.textBox}>
             <h2>About me</h2>
+            
             <p>
               A dedicated full-stack devdloper with a specialized skill set that
               enables me to build robust web applications. I am adept in both
@@ -32,7 +33,7 @@ export const AboutMe = () => {
           </div>
         </div>
         <div className={styles.imgBox}>
-          <img src="/mern.png" alt="" />
+          <img src="/feeling_proud.png" alt="" />
         </div>
       </div>
       <Technologies data={techno} title={"Technologies"} />
