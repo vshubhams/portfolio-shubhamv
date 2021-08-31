@@ -9,8 +9,10 @@
 }
 .container{
     display: flex;
+    max-width: 1250px;
     padding: 0 30px;
     height: 60px;
+    margin: auto;
     align-items: center;    
     justify-content: space-between;
 }
@@ -20,6 +22,11 @@
 }
 .right{
     display: flex;
+}
+@media only screen and (max-width: 600px) {
+    .right{
+     display: none;
+    }
 }
 .right>div{
     margin: 0 10px;
