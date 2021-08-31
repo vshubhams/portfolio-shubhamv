@@ -6,20 +6,28 @@
 
 .container {
   display: grid;
-  grid-template-columns: 50% 40%;
-  justify-content: center;
-  max-width: 1250px;
+  grid-template-columns: 72% 25%;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 80%;
   margin: auto;
+  /* border: solid; */
 }
 .container > div {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* border: solid red; */
+  /* border: solid green; */
+}
+.imgBox{
+  /* border: solid; */
+  justify-content: start;
+  text-align: right;
 }
 .imgBox > img {
-  width: 50%;
+  width: 115%;
+  /* border: solid red; */
 }
 .textBox > h2 {
   margin-bottom: 10px;
@@ -47,5 +55,8 @@
     width: fit-content;
     margin: auto;
     margin-top: 20px;
+  }
+  .textBox{
+    text-align: center;
   }
 }

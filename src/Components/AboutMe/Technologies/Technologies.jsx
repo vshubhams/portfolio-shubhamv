@@ -1,37 +1,35 @@
-import styles from "./tech.module.css"
+import styles from "./tech.module.css";
+import Grid from "@material-ui/core/Grid";
+import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 
-export const Technologies = () => {
-    return (
-        <div className={styles.container}>
-            <h2>Technologies</h2>
-            <div className={styles.grid}>
-                <div>
-                    <IconButton>
-                        <img src="/icons/html.png" alt="" />
-                    </IconButton>
-                </div>
-                <div>
-                    <IconButton>
-                        <img src="/icons/css.png" alt="" />
-                    </IconButton>
-                </div>
-                <div>
-                    <IconButton>
-                        <img src="/icons/javascript.png" alt="" />
-                    </IconButton>
-                </div>
-                <div>
-                    <IconButton>
-                        <img src="/icons/react.png" alt="" />
-                    </IconButton>
-                </div>
-                <div>
-                    <IconButton>
-                        <img src="/icons/redux.png" alt="" />
-                    </IconButton>
-                </div>
-            </div>
-        </div>
-    )
-}
+const useStyles = makeStyles((theme) => ({
+  paper: {
+      width: 80,
+      height: 100,
+    //   border:"solid blue"
+  },
+}));
+
+export const Technologies = ({data,title}) => {
+  const classes = useStyles();
+  return (
+    <div className={styles.container}>
+      <h2>{title}</h2>
+      <Grid container className={styles.grid} justifyContent="center">
+        {data.map((el) => (
+          <Grid xs={6} sm={4} md={3} item>
+            <IconButton>
+              <div  className={classes.paper}>
+                <img src={el.image} alt="" />
+                <p>{el.name}</p>
+              </div>
+            </IconButton>
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
+};
+
+
