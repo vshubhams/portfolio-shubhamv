@@ -19,17 +19,17 @@ export const Navbar = ({ toggle }) => {
         <div className={styles.right}>
           <div className={styles.menuItems}>
             <div>
-              <Link className="active" to="about" spy={true} exact smooth={true} duration={500}>
+              <Link className="active" to="about" spy={true} exact smooth={true} duration={500} offset={-80} >
                 About
               </Link>
             </div>
             <div>
-              <Link to="projects" spy={true} exact smooth={true} duration={500}>
+              <Link to="projects" spy={true} exact smooth={true} duration={500} offset={-80} >
                 Projects
               </Link>
             </div>
             <div>
-              <Link to="contact" spy={true} exact smooth={true} duration={500}>
+              <Link to="contact" spy={true} exact smooth={true} duration={500} offset={-80}>
                 Contact
               </Link>
             </div>

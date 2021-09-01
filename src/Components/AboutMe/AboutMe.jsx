@@ -8,32 +8,35 @@ import { Technologies } from "./Technologies/Technologies";
 export const AboutMe = () => {
   return (
     <div id="about" className={styles.wrapper}>
+      <h2>About me</h2>
       <div className={styles.container} container spacing={1}>
+        <div className={styles.imgBox}>
+          <img src="/feeling_proud.png" alt="" />
+        </div>
         <div>
           <div className={styles.textBox}>
-            <h2>About me</h2>
-            
             <p>
+              A dedicated full-stack devdloper with a specialized skill set that
+              enables me to build robust web applications. I am adept in both
+              front-end and back-end and have an eye for performance an
+              accuracy.
               A dedicated full-stack devdloper with a specialized skill set that
               enables me to build robust web applications. I am adept in both
               front-end and back-end and have an eye for performance an
               accuracy.
             </p>
             <div className={styles.iconBox}>
-              <IconButton  className={styles.linkedIn} >
-                <LinkedInIcon/>
+              <IconButton className={styles.linkedIn}>
+                <LinkedInIcon fontSize="large" />
               </IconButton>
               <IconButton className={styles.gitHub}>
-                <GitHubIcon />
+                <GitHubIcon fontSize="large" />
               </IconButton>
               <IconButton className={styles.twitter}>
-                <TwitterIcon />
+                <TwitterIcon fontSize="large" />
               </IconButton>
             </div>
           </div>
-        </div>
-        <div className={styles.imgBox}>
-          <img src="/feeling_proud.png" alt="" />
         </div>
       </div>
       <Technologies data={techno} title={"Technologies"} />
@@ -97,5 +100,5 @@ const proficiencies = [
   {
     name: "DS & Algorithm",
     image: "/icons/datastructure.png",
-  }
+  },
 ];

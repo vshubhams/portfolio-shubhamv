@@ -3,10 +3,14 @@
   background-color: #fafafa;
   margin-bottom: 30px;
 }
+.wrapper>h2{
+  text-align: center;
+  margin-top: 30px;
+}
 
 .container {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 45% 55%;
   justify-content: space-between;
   max-width: 1100px;
   width: 80%;
@@ -25,6 +29,7 @@
   justify-content: start;
   text-align: right;
 }
+
 .imgBox > img {
   width: 100%;
   /* border: solid red; */
@@ -49,7 +54,7 @@
     grid-template-columns: 100%;
   }
   .imgBox > img {
-    width: 30%;
+    width: 50%;
   }
   .iconBox {
     width: fit-content;

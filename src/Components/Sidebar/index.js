@@ -6,8 +6,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
 } from './SidebarElement'
 
 const Sidebar = ({
@@ -21,13 +19,13 @@ const Sidebar = ({
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+          <SidebarLink to="about" onClick={toggle} smooth={true} duration={500} offset={-80}>
             About
           </SidebarLink>
-          <SidebarLink to="projects" onClick={toggle}>
+          <SidebarLink to="projects" onClick={toggle} smooth={true} duration={500} offset={-80}>
             Projects
           </SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>
+          <SidebarLink to="contact" onClick={toggle} smooth={true} duration={500} offset={-80}>
             Contact
           </SidebarLink>
 
