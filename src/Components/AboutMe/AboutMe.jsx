@@ -7,7 +7,7 @@ import { Technologies } from "./Technologies/Technologies";
 
 export const AboutMe = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="about" className={styles.wrapper}>
       <div className={styles.container} container spacing={1}>
         <div>
           <div className={styles.textBox}>

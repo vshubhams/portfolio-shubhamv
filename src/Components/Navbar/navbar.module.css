@@ -5,7 +5,13 @@
     color: #646464;
 }
 .wrapper{
-    border: solid #c7c7c7 1px;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 50;
+    background-color: #FAFAFA;
+    border-bottom: solid #c7c7c7 1px;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
 }
 .container{
     display: flex;
@@ -19,18 +25,36 @@
 .left>div{
     font-size: 30px;
     font-weight: 300;
+    cursor: pointer;
 }
 .right{
     display: flex;
+    align-items: center;
 }
-.right>div{
+.menuItems{
+    display: flex;
+}
+.menuItems>div{
     letter-spacing: 1px;
 }
+.menuItems a{
+    cursor: pointer;
+}
+.menuItems a:hover{
+    color: #AD46A8;
+}
+
+.menuButton{
+    display:none;
+}
 @media only screen and (max-width: 600px) {
-    .right{
+    .menuItems{
      display: none;
     }
+    .menuButton{
+        display: unset;
+    }
 }
-.right>div{
+.menuItems>div{
     margin: 0 10px;
 }
