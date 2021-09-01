@@ -2,13 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter} from "react-router-dom"
+import { createTheme, ThemeProvider } from '@material-ui/core/styles';
+import { BrowserRouter } from "react-router-dom"
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#FFF",
+    },
+    secondary: {
+      main: "#AD46A8",
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

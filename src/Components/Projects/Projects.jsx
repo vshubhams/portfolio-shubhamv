@@ -12,6 +12,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -45,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  gitHub: {
+    marginRight:theme.spacing(1)
+  }
 }));
 
 
@@ -87,11 +91,16 @@ export const Projects = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" variant="contained" color="secondary">
+                      <Typography color="primary">
                       Demo
+                      </Typography>
                     </Button>
-                    <Button size="small" color="primary">
-                      Source Code
+                    <Button size="small" variant="outlined" color="secondary">
+                      <GitHubIcon className={classes.gitHub} />
+                      <Typography >
+                      CODE
+                      </Typography>
                     </Button>
                   </CardActions>
                 </Card>
