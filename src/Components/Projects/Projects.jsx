@@ -91,12 +91,12 @@ export const Projects = () => {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" variant="contained" color="secondary">
+                    <Button onClick={()=>{window.open(item.demolink)}} size="small" variant="contained" color="secondary">
                       <Typography color="primary">
                       Demo
                       </Typography>
                     </Button>
-                    <Button size="small" variant="outlined" color="secondary">
+                    <Button onClick={()=>{window.open(item.gitHub)}} size="small" variant="outlined" color="secondary">
                       <GitHubIcon className={classes.gitHub} />
                       <Typography >
                       CODE
@@ -117,21 +117,29 @@ const projects = [
     {
         title: "Ajio.com",
         image:"https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
-        descrip:"This is Description of the project. Here I will describe the project."
+        descrip:"This is Description of the project. Here I will describe the project.",
+        gitHub:"https://github.com/vshubhams/Ajio-clone",
+        demolink:"http://www.ajioproject.ml/"
     },
     {
         title: "AngelList.com",
         image:"https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
-        descrip:"This is Description of the project. Here I will describe the project."
+        descrip:"This is Description of the project. Here I will describe the project.",
+        gitHub:"https://github.com/vshubhams/project-angel",
+        demolink:"https://angellist.netlify.app/"
     },
     {
         title: "Ajio.com",
         image:"https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
-        descrip:"This is Description of the project. Here I will describe the project."
+        descrip:"This is Description of the project. Here I will describe the project.",
+        gitHub:"https://github.com/vshubhams/Ajio-clone",
+        demolink:"http://www.ajioproject.ml/"
     },
     {
         title: "AngelList.com",
         image:"https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
-        descrip:"This is Description of the project. Here I will describe the project."
+        descrip:"This is Description of the project. Here I will describe the project.",
+        gitHub:"https://github.com/vshubhams/project-angel",
+        demolink:"https://angellist.netlify.app/"
     }
 ]
