@@ -9,6 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import emailjs from "emailjs-com"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -22,27 +23,41 @@ const useStyles = makeStyles((theme) => ({
 export const Contact = () => {
     const classes = useStyles();
 
+    function sendEmail(e) {
+        console.log("shubham")
+        e.preventDefault();
+    
+        emailjs.sendForm(process.env.REACT_APP_SERVICES_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+        e.target.reset();
+      }
+
     return (
         <div id="contact" className={styles.wrapper}>
             <h1>Contact</h1>
             <div className={styles.container} container spacing={1}>
                 <div className={styles.formBox}>
-                    <form className={classes.root} noValidate autoComplete="off">
-                        <TextField color="secondary" size="small" label="Name" />
+                    <form onSubmit={sendEmail} className={classes.root} noValidate autoComplete="off">
+                        <TextField color="secondary" size="small" label="Name" name="name" />
                         <br />
-                        <TextField color="secondary" size="small" label="Email" /> <br />
-                        <TextField color="secondary" size="small" label="Subject" />
+                        <TextField color="secondary" size="small" label="Email" name="email" /> <br />
+                        <TextField color="secondary" size="small" label="Subject" name="subject" />
                         <br />
                         <TextField
                             color="secondary"
                             size="small"
+                            name="message"
                             label="Write Your Message here..."
                             multiline
                             fullWidth={true}
                             rows={4}
                             variant="outlined"
                         />
-                        <Button color="secondary" variant="contained">
+                        <Button type="submit" color="secondary" variant="contained">
                             <EmailIcon />
                             <Typography color="primary">Send Mail</Typography>
                         </Button>

@@ -60,7 +60,7 @@ export const Projects = () => {
       <main>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-          <h1 style={{textAlign:"center"}}>Project</h1>
+          <h1 style={{textAlign:"center"}}>Projects</h1>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="lg">
