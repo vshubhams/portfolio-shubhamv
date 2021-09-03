@@ -28,10 +28,16 @@ margin-top: 60px;
     border: none;
     outline: none;
     color: white;
+    display: flex;
+    align-items: center;
     background-color: #AD46A8;
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 3px;
     margin: 20px 0;
     font-size: 15px;
+}
+.container>button svg{
+    fill: #FFF;
+    margin-right: 5px;
 }
