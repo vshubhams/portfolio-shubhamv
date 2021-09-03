@@ -8,7 +8,7 @@ import { Technologies } from "./Technologies/Technologies";
 export const AboutMe = () => {
   return (
     <div id="about" className={styles.wrapper}>
-      <h2>About me</h2>
+      <h1>About me</h1>
       <div className={styles.container} container spacing={1}>
         <div className={styles.imgBox}>
           <img src="/feeling_proud.png" alt="" />

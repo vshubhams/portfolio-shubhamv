@@ -5,6 +5,7 @@ import { Profile } from './Components/Profile/Profile';
 import { Projects } from './Components/Projects/Projects';
 import Sidebar from "./Components/Sidebar/"
 import { useState } from 'react';
+import { Contact } from './Components/Contact/Contact';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -16,6 +17,7 @@ function App() {
       <Profile />
       <AboutMe />
       <Projects />
+      <Contact />
     </div>
   );
 }

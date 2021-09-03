@@ -4,6 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { BrowserRouter } from "react-router-dom"
+import green from '@material-ui/core/colors/green';
 
 const theme = createTheme({
   palette: {
@@ -13,6 +14,9 @@ const theme = createTheme({
     secondary: {
       main: "#AD46A8",
     },
+    green: {
+      main:green[500],
+    }
   },
 });
 

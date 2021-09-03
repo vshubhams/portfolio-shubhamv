@@ -60,18 +60,10 @@ export const Projects = () => {
       <main>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography
-              component="h3"
-              variant="h3"
-              align="center"
-              color="textPrimary"
-              gutterBottom
-            >
-              Projects
-            </Typography>
+          <h1 style={{textAlign:"center"}}>Project</h1>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={3}>
             {projects.map((item,card) => (
@@ -120,26 +112,19 @@ const projects = [
         descrip:"This is Description of the project. Here I will describe the project.",
         gitHub:"https://github.com/vshubhams/Ajio-clone",
         demolink:"http://www.ajioproject.ml/"
-    },
-    {
+      },
+      {
+          title: "Hyannis Plaza Hotel",
+          image:"https://raw.githubusercontent.com/vshubhams/Hyannis-Plaza/master/public/screenshots/Screenshot%20(491).png",
+          descrip:"This is Description of the project. Here I will describe the project.",
+          gitHub:"https://github.com/vshubhams/Hyannis-Plaza",
+          demolink:"https://hyannisplaza.netlify.app/"
+      },
+      {
         title: "AngelList.com",
         image:"https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
         descrip:"This is Description of the project. Here I will describe the project.",
         gitHub:"https://github.com/vshubhams/project-angel",
         demolink:"https://angellist.netlify.app/"
-    },
-    {
-        title: "Ajio.com",
-        image:"https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
-        descrip:"This is Description of the project. Here I will describe the project.",
-        gitHub:"https://github.com/vshubhams/Ajio-clone",
-        demolink:"http://www.ajioproject.ml/"
-    },
-    {
-        title: "AngelList.com",
-        image:"https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
-        descrip:"This is Description of the project. Here I will describe the project.",
-        gitHub:"https://github.com/vshubhams/project-angel",
-        demolink:"https://angellist.netlify.app/"
-    }
+      }
 ]
