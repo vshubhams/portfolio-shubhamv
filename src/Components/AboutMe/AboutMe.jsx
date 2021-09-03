@@ -26,13 +26,13 @@ export const AboutMe = () => {
               accuracy.
             </p>
             <div className={styles.iconBox}>
-              <IconButton className={styles.linkedIn}>
+              <IconButton onClick={()=>{window.open("https://www.linkedin.com/in/vshubhams/")}} className={styles.linkedIn}>
                 <LinkedInIcon fontSize="large" />
               </IconButton>
-              <IconButton className={styles.gitHub}>
+              <IconButton onClick={()=>{window.open("https://github.com/vshubhams")}} className={styles.gitHub}>
                 <GitHubIcon fontSize="large" />
               </IconButton>
-              <IconButton className={styles.twitter}>
+              <IconButton onClick={()=>{window.open("https://twitter.com/shubhamv_")}} className={styles.twitter}>
                 <TwitterIcon fontSize="large" />
               </IconButton>
             </div>
