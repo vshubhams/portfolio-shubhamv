@@ -1,0 +1,11 @@
+.techContainer{
+ display: flex;   
+ flex-wrap: wrap;
+}
+.techContainer>div{
+    color: white;
+    margin: 10px 10px 0px;
+    border-radius: 5px;
+    padding: 3px 6px;
+    background-color: #646464;
+}

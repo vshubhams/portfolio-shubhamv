@@ -16,11 +16,7 @@ export const AboutMe = () => {
         <div>
           <div className={styles.textBox}>
             <p>
-              A dedicated full-stack devdloper with a specialized skill set that
-              enables me to build robust web applications. I am adept in both
-              front-end and back-end and have an eye for performance an
-              accuracy.
-              A dedicated full-stack devdloper with a specialized skill set that
+              A dedicated full-stack developer with a specialized skill-set that
               enables me to build robust web applications. I am adept in both
               front-end and back-end and have an eye for performance an
               accuracy.

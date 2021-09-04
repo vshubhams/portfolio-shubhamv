@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./projects.module.css"
 // import AppBar from "@material-ui/core/AppBar";
 import Button from "@material-ui/core/Button";
 // import CameraIcon from "@material-ui/icons/PhotoCamera";
@@ -20,21 +21,21 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     // backgroundColor: theme.palette.background.paper,
-      // padding: theme.spacing(8, 0, 6),
+    // padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
   },
   cardGrid: {
     paddingTop: theme.spacing(2),
-      paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
     // border:"solid blue 1px"
   },
   card: {
     height: "100%",
-      display: "flex",
-      flexDirection: "column",
-      // border:"solid red",
+    display: "flex",
+    flexDirection: "column",
+    // border:"solid red",
   },
   cardMedia: {
     paddingTop: "56.25%", // 16:9
@@ -47,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(6),
   },
   gitHub: {
-    marginRight:theme.spacing(1)
+    marginRight: theme.spacing(1)
   }
 }));
 
@@ -60,13 +61,13 @@ export const Projects = () => {
       <main>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-          <h1 style={{textAlign:"center"}}>Projects</h1>
+            <h1 style={{ textAlign: "center" }}>Projects</h1>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={3}>
-            {projects.map((item,card) => (
+            {projects.map((item, card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
@@ -79,19 +80,24 @@ export const Projects = () => {
                       {item.title}
                     </Typography>
                     <Typography>
-                     {item.descrip}
+                      {item.descrip}
                     </Typography>
+                    <div className={styles.techContainer}>
+                      {item.techs.map((item) => (
+                        <div>{item}</div>
+                      ))}
+                    </div>
                   </CardContent>
                   <CardActions>
-                    <Button onClick={()=>{window.open(item.demolink)}} size="small" variant="contained" color="secondary">
+                    <Button onClick={() => { window.open(item.demolink) }} size="small" variant="contained" color="secondary">
                       <Typography color="primary">
-                      Demo
+                        Demo
                       </Typography>
                     </Button>
-                    <Button onClick={()=>{window.open(item.gitHub)}} size="small" variant="outlined" color="secondary">
+                    <Button onClick={() => { window.open(item.gitHub) }} size="small" variant="outlined" color="secondary">
                       <GitHubIcon className={classes.gitHub} />
                       <Typography >
-                      CODE
+                        CODE
                       </Typography>
                     </Button>
                   </CardActions>
@@ -106,25 +112,28 @@ export const Projects = () => {
 };
 
 const projects = [
-    {
-        title: "Ajio.com",
-        image:"https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
-        descrip:"This is Description of the project. Here I will describe the project.",
-        gitHub:"https://github.com/vshubhams/Ajio-clone",
-        demolink:"http://www.ajioproject.ml/"
-      },
-      {
-          title: "Hyannis Plaza Hotel",
-          image:"https://raw.githubusercontent.com/vshubhams/Hyannis-Plaza/master/public/screenshots/Screenshot%20(491).png",
-          descrip:"This is Description of the project. Here I will describe the project.",
-          gitHub:"https://github.com/vshubhams/Hyannis-Plaza",
-          demolink:"https://hyannisplaza.netlify.app/"
-      },
-      {
-        title: "AngelList.com",
-        image:"https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
-        descrip:"This is Description of the project. Here I will describe the project.",
-        gitHub:"https://github.com/vshubhams/project-angel",
-        demolink:"https://angellist.netlify.app/"
-      }
+  {
+    title: "Ajio.com",
+    image: "https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
+    descrip: "Built a front-end web app with two other members to allow users to show products and buy products.",
+    gitHub: "https://github.com/vshubhams/Ajio-clone",
+    demolink: "http://www.ajioproject.ml/",
+    techs: ["HTML","CSS", "JavaScript"]
+  },
+  {
+    title: "Hyannis Plaza Hotel",
+    image: "https://raw.githubusercontent.com/vshubhams/Hyannis-Plaza/master/public/screenshots/Screenshot%20(491).png",
+    descrip: "Built a front-end web app with two other members to allow users to find book rooms in hotel Hyannis Plaza.",
+    gitHub: "https://github.com/vshubhams/Hyannis-Plaza",
+    demolink: "https://hyannisplaza.netlify.app/",
+    techs: ["React","Redux", "Material UI","styled-components"]
+  },
+  {
+    title: "AngelList.com",
+    image: "https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
+    descrip: "Developed a front-end web app to allow job seekers to find and apply to jobs and recruiters to post new jobs.",
+    gitHub: "https://github.com/vshubhams/project-angel",
+    demolink: "https://angellist.netlify.app/",
+    techs: ["React","json-server","styled-components"]
+  }
 ]

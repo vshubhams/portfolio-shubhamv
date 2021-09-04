@@ -9,9 +9,9 @@ export const Profile = () => {
                 </div>
                 <div className={styles.myName}>Hi, I'm <span>Shubham verma </span></div>
                 <p className={styles.descrip}>
-                    An enthusiastic Full-Stack Web Developer with a strong set of technical as well as non-technical skills and a dedication towards creating useful and interactive web application.
+                    An Aspiring Developer with a passion for developing scalable web applications.
                 </p>
-                <button onClick={()=>{window.open("https://drive.google.com/file/d/1fZG3oHKl-w7_pPZhHlJxTu7EocHZixVM/view?usp=sharing")}}> <GetAppIcon /> RESUME</button>
+                <button onClick={() => { window.open("https://drive.google.com/file/d/1fZG3oHKl-w7_pPZhHlJxTu7EocHZixVM/view?usp=sharing") }}> <GetAppIcon /> RESUME</button>
             </div>
         </div>
     )
