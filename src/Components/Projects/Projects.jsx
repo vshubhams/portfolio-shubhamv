@@ -123,7 +123,7 @@ const projects = [
   {
     title: "Hyannis Plaza Hotel",
     image: "https://raw.githubusercontent.com/vshubhams/Hyannis-Plaza/master/public/screenshots/Screenshot%20(491).png",
-    descrip: "Built a front-end web app with two other members to allow users to find book rooms in hotel Hyannis Plaza.",
+    descrip: "Built a front-end web app with two other members to allow users to find and book rooms in hotel Hyannis Plaza.",
     gitHub: "https://github.com/vshubhams/Hyannis-Plaza",
     demolink: "https://hyannisplaza.netlify.app/",
     techs: ["React","Redux", "Material UI","styled-components"]

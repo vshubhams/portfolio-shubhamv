@@ -37,13 +37,6 @@
 .menuItems>div{
     letter-spacing: 1px;
 }
-.menuItems a{
-    cursor: pointer;
-}
-.menuItems a:hover{
-    color: #AD46A8;
-}
-
 .menuButton{
     display:none;
 }

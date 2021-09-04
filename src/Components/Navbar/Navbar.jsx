@@ -1,9 +1,11 @@
 import styles from "./navbar.module.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
-import { Link, animateScroll } from "react-scroll";
+import { Link as ScrollLink, animateScroll } from "react-scroll";
+import styled from 'styled-components';
 
 export const Navbar = ({ toggle }) => {
+  console.log(window.location)
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -19,23 +21,23 @@ export const Navbar = ({ toggle }) => {
         <div className={styles.right}>
           <div className={styles.menuItems}>
             <div>
-              <Link className="active" to="about" spy={true} exact smooth={true} duration={500} offset={-80} >
+              <NavLinks to="about" spy={true} exact smooth={true} duration={500} offset={-80} >
                 About
-              </Link>
+              </NavLinks>
             </div>
             <div>
-              <Link to="projects" spy={true} exact smooth={true} duration={500} offset={-80} >
+              <NavLinks to="projects" spy={true} exact smooth={true} duration={500} offset={-70} >
                 Projects
-              </Link>
+              </NavLinks>
             </div>
             <div>
-              <Link to="contact" spy={true} exact smooth={true} duration={500} offset={-80}>
+              <NavLinks to="contact" spy={true} exact smooth={true} duration={500} offset={-100}>
                 Contact
-              </Link>
+              </NavLinks>
             </div>
           </div>
           <div className={styles.menuButton}>
-            <IconButton onClick={toggle}>
+            <IconButton style={{border:"solid"}} onClick={toggle}>
               <MenuIcon />
             </IconButton>
           </div>
@@ -44,3 +46,19 @@ export const Navbar = ({ toggle }) => {
     </div>
   );
 };
+export const NavLinks = styled(ScrollLink)`
+  color: #646464;
+  display: flex;
+  align-items: center; 
+  text-decoration: none; 
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer; 
+
+  &.active {
+    border-bottom: 3px solid #AD46A8;
+  }
+  &:hover{
+    color: #AD46A8;
+  }
+`;

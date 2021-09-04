@@ -10,6 +10,9 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import emailjs from "emailjs-com"
+import { useState } from "react";
+
+import Modal from '@material-ui/core/Modal';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -18,10 +21,42 @@ const useStyles = makeStyles((theme) => ({
             width: "35ch",
         },
     },
+    paper: {
+        margin: 'auto',
+        marginTop: '150px',
+        textAlign:"center",
+        width: 400,
+        backgroundColor: theme.palette.background.paper,
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+    },
+    h6: {
+        marginTop: '20px',
+        marginBottom: '5px',
+        color:"white"
+    },
 }));
 
 export const Contact = () => {
     const classes = useStyles();
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const body = (
+        <div className={classes.paper}>
+            <h2 id="simple-modal-title">Email has been sent successfully.</h2>
+            <p id="simple-modal-description">We will reply you soon.</p>
+            <Button onClick={handleClose} className={classes.h6} variant="contained" color="secondary"><Typography color="primary">OK</Typography></Button>
+        </div>
+    );
+
 
     function sendEmail(e) {
         console.log("shubham")
@@ -57,7 +92,7 @@ export const Contact = () => {
                             rows={4}
                             variant="outlined"
                         />
-                        <Button type="submit" color="secondary" variant="contained">
+                        <Button onClick={handleOpen} type="submit" color="secondary" variant="contained">
                             <EmailIcon />
                             <Typography color="primary">Send Mail</Typography>
                         </Button>
@@ -87,6 +122,11 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
+            <Modal open={open} onClose={handleClose}
+                aria-labelledby="simple-modal-title"
+                aria-describedby="simple-modal-description">
+                {body}
+            </Modal>
         </div>
     );
 };
