@@ -5,6 +5,7 @@ import { Button } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from '@material-ui/icons/Phone';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -77,13 +78,13 @@ export const Contact = () => {
             <div className={styles.container} container spacing={1}>
                 <div className={styles.formBox}>
                     <form onSubmit={sendEmail} className={classes.root} noValidate autoComplete="off">
-                        <TextField color="secondary" size="small" label="Name" name="name" />
+                        <TextField color="primary" size="small" label="Name" name="name" />
                         <br />
-                        <TextField color="secondary" size="small" label="Email" name="email" /> <br />
-                        <TextField color="secondary" size="small" label="Subject" name="subject" />
+                        <TextField color="primary" size="small" label="Email" name="email" /> <br />
+                        <TextField color="primary" size="small" label="Subject" name="subject" />
                         <br />
                         <TextField
-                            color="secondary"
+                            color="primary"
                             size="small"
                             name="message"
                             label="Write Your Message here..."
@@ -92,21 +93,25 @@ export const Contact = () => {
                             rows={4}
                             variant="outlined"
                         />
-                        <Button onClick={handleOpen} type="submit" color="secondary" variant="contained">
+                        <Button onClick={handleOpen} type="submit" color="primary" variant="contained">
                             <EmailIcon />
-                            <Typography color="primary">Send Mail</Typography>
+                            <Typography color="secondary">Send Mail</Typography>
                         </Button>
                     </form>
                 </div>
                 <div className={styles.contactDetails}>
                     <div>
-                        <div>
+                        <div className={styles.info}>
                             <EmailIcon />
                             <p>shubhamv430@gmail.com</p>
                         </div>
-                        <div>
+                        <div className={styles.info}>
                             <PhoneIcon />
                             <p>8954686319</p>
+                        </div>
+                        <div className={styles.info}>
+                            <LocationOnIcon />
+                            <p>Baghpat, Uttar Pradesh</p>
                         </div>
                         <div className={styles.iconBox}>
                             <IconButton onClick={() => { window.open("https://www.linkedin.com/in/vshubhams/") }} className={styles.linkedIn}>

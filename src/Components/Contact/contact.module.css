@@ -6,6 +6,7 @@
 .wrapper > h1 {
   text-align: center;
   margin-top: 30px;
+  color: #CC4865;
 }
 
 .container {
@@ -62,6 +63,9 @@
   }
   .twitter svg {
     fill: #1d9bf0;
+  }
+  .info>svg{
+    fill: #CC4865;
   }
 @media only screen and (max-width: 600px) {
   .container {

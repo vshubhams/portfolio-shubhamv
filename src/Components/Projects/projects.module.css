@@ -4,8 +4,8 @@
 }
 .techContainer>div{
     color: white;
-    margin: 10px 10px 0px;
+    margin: 10px 10px 0px 0;
     border-radius: 5px;
     padding: 3px 6px;
-    background-color: #646464;
+    background-color: #e47b92;
 }

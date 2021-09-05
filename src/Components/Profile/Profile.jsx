@@ -8,7 +8,7 @@ export const Profile = () => {
         <div className={styles.wrapper}>
             <div className={styles.container}>
                 <motion.div variants={fade} initial="hidden" animate="show" className={styles.imgBox}>
-                    <img src="/shubhamv2.jpg" alt="" />
+                    <img src="/profile.png" alt="" />
                 </motion.div>
                 <div className={styles.myName}>Hi, I'm <span>Shubham</span></div>
                 <div className={styles.title}>I'm a{" "}

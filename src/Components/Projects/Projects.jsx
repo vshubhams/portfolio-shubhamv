@@ -20,8 +20,10 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   heroContent: {
-    // backgroundColor: theme.palette.background.paper,
-    // padding: theme.spacing(8, 0, 6),
+    '& h1': {
+      color: '#CC4865',
+      textAlign: "center"
+    }
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -61,7 +63,7 @@ export const Projects = () => {
       <main>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <h1 style={{ textAlign: "center" }}>Projects</h1>
+            <h1>Projects</h1>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="lg">
@@ -89,12 +91,12 @@ export const Projects = () => {
                     </div>
                   </CardContent>
                   <CardActions>
-                    <Button onClick={() => { window.open(item.demolink) }} size="small" variant="contained" color="secondary">
-                      <Typography color="primary">
+                    <Button onClick={() => { window.open(item.demolink) }} size="small" variant="contained" color="primary">
+                      <Typography color="secondary">
                         Demo
                       </Typography>
                     </Button>
-                    <Button onClick={() => { window.open(item.gitHub) }} size="small" variant="outlined" color="secondary">
+                    <Button onClick={() => { window.open(item.gitHub) }} size="small" variant="outlined" color="primary">
                       <GitHubIcon className={classes.gitHub} />
                       <Typography >
                         CODE

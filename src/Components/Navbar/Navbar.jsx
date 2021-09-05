@@ -3,11 +3,23 @@ import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
 import { Link as ScrollLink, animateScroll } from "react-scroll";
 import styled from 'styled-components';
+import { useState } from "react";
 
 export const Navbar = ({ toggle }) => {
-  console.log(window.location)
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 60) {
+      setNavbar(true);
+    }
+    else {
+      setNavbar(false);
+    }
+  }
+  window.addEventListener('scroll', changeBackground);
+
   return (
-    <div className={styles.wrapper}>
+    <div className={navbar ? `${styles.wrapper} ${styles.active}` : `${styles.wrapper}`}>
       <div className={styles.container}>
         <div className={styles.left}>
           <div
@@ -21,17 +33,17 @@ export const Navbar = ({ toggle }) => {
         <div className={styles.right}>
           <div className={styles.menuItems}>
             <div>
-              <NavLinks to="about" spy={true} exact smooth={true} duration={500} offset={-80} >
+              <NavLinks to="about" spy={true} exact smooth={true} duration={500} offset={-70} >
                 About
               </NavLinks>
             </div>
             <div>
-              <NavLinks to="projects" spy={true} exact smooth={true} duration={500} offset={-70} >
+              <NavLinks to="projects" spy={true} exact smooth={true} duration={500} offset={-80} >
                 Projects
               </NavLinks>
             </div>
             <div>
-              <NavLinks to="contact" spy={true} exact smooth={true} duration={500} offset={-100}>
+              <NavLinks to="contact" spy={true} exact smooth={true} duration={500} offset={-90}>
                 Contact
               </NavLinks>
             </div>
@@ -47,7 +59,7 @@ export const Navbar = ({ toggle }) => {
   );
 };
 export const NavLinks = styled(ScrollLink)`
-  color: #646464;
+  color: white;
   display: flex;
   align-items: center; 
   text-decoration: none; 
@@ -56,9 +68,9 @@ export const NavLinks = styled(ScrollLink)`
   cursor: pointer; 
 
   &.active {
-    border-bottom: 3px solid #AD46A8;
+    border-bottom: 3px solid #FFF;
   }
   &:hover{
-    color: #AD46A8;
+    color: black;
   }
 `;

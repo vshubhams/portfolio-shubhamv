@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    color: #646464;
 }
 .wrapper{
     top: 0;
     width: 100%;
     position: fixed;
     z-index: 50;
-    background-color: #FAFAFA;
-    border-bottom: solid #c7c7c7 1px;
+    background: transparent;
+}
+.wrapper.active{
+    background-color: #CC4865;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
 }
 .container{
@@ -26,6 +27,7 @@
     font-size: 30px;
     font-weight: 300;
     cursor: pointer;
+    color: white;
 }
 .right{
     display: flex;

@@ -1,11 +1,12 @@
 .wrapper {
-  /* border: solid #e7e7e7 1px; */
+  border: solid #e7e7e7 1px;
   background-color: #fafafa;
   margin-bottom: 30px;
 }
 .wrapper>h1{
   text-align: center;
   margin-top: 30px;
+  color: #CC4865;
 }
 
 .container {
