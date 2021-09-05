@@ -37,7 +37,7 @@ export const Navbar = ({ toggle }) => {
             </div>
           </div>
           <div className={styles.menuButton}>
-            <IconButton style={{border:"solid"}} onClick={toggle}>
+            <IconButton onClick={toggle}>
               <MenuIcon />
             </IconButton>
           </div>

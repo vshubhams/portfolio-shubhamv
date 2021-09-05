@@ -11,6 +11,13 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
+    '&:hover': {
+      transform: "scale(1.15)",
+      transition:"transform .4s"
+    },
+    '& p': {
+      marginTop:"8px"
+    }
   },
 }));
 

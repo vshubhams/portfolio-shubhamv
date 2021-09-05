@@ -21,6 +21,14 @@ margin-top: 60px;
 .myName>span{
     color: #AD46A8;
 }
+.title{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.title>span{
+    color: #AD46A8;
+}
 .descrip{
     text-align: center;
 }
