@@ -40,6 +40,8 @@ const useStyles = makeStyles((theme) => ({
 
 export const Contact = () => {
     const classes = useStyles();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => {
@@ -62,7 +64,11 @@ export const Contact = () => {
     function sendEmail(e) {
         console.log("shubham")
         e.preventDefault();
-    
+        console.log(e.target);
+        if (email.length === 0 || name.length === 0) {
+            console.log(email.length,name.length)
+            return;
+        }
         emailjs.sendForm(process.env.REACT_APP_SERVICES_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
           .then((result) => {
               console.log(result.text);
@@ -70,6 +76,7 @@ export const Contact = () => {
               console.log(error.text);
           });
         e.target.reset();
+        handleOpen();
       }
 
     return (
@@ -78,13 +85,18 @@ export const Contact = () => {
             <div className={styles.container} container spacing={1}>
                 <div className={styles.formBox}>
                     <form onSubmit={sendEmail} className={classes.root} noValidate autoComplete="off">
-                        <TextField color="primary" size="small" label="Name" name="name" />
+                        <TextField
+                            onChange={(e)=>{setName(e.target.value)}}
+                            color="primary" size="small" label="Name" name="name" />
                         <br />
-                        <TextField color="primary" size="small" label="Email" name="email" /> <br />
+                        <TextField
+                            onChange={(e) => { setEmail(e.target.value) }}
+                            color="primary" size="small" label="Email" name="email" /> <br />
                         <TextField color="primary" size="small" label="Subject" name="subject" />
                         <br />
                         <TextField
                             color="primary"
+                            
                             size="small"
                             name="message"
                             label="Write Your Message here..."
@@ -93,7 +105,7 @@ export const Contact = () => {
                             rows={4}
                             variant="outlined"
                         />
-                        <Button onClick={handleOpen} type="submit" color="primary" variant="contained">
+                        <Button type="submit" color="primary" variant="contained">
                             <EmailIcon />
                             <Typography color="secondary">Send Mail</Typography>
                         </Button>
