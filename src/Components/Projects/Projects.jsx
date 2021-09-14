@@ -10,6 +10,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
 // import Toolbar from "@material-ui/core/Toolbar";
+import VisibilityIcon from '@material-ui/icons/Visibility';
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: "56.25%", // 16:9
   },
   cardContent: {
-    border:"solid white",
+    border: "solid white",
     flexGrow: 1,
   },
   footer: {
@@ -54,6 +55,13 @@ const useStyles = makeStyles((theme) => ({
   },
   gitHub: {
     marginRight: theme.spacing(1)
+  },
+  demo: {
+    marginRight: theme.spacing(1),
+    fill: "white"
+  },
+  cardActions: {
+    justifyContent:"space-around"
   }
 }));
 
@@ -93,8 +101,9 @@ export const Projects = () => {
                       ))}
                     </div>
                   </CardContent>
-                  <CardActions>
+                  <CardActions className={classes.cardActions}>
                     <Button onClick={() => { window.open(item.demolink) }} size="small" variant="contained" color="primary">
+                      <VisibilityIcon className={classes.demo} />
                       <Typography color="secondary">
                         Demo
                       </Typography>
