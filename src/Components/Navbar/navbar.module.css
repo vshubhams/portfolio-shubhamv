@@ -42,6 +42,9 @@
 .menuButton{
     display:none;
 }
+.menuButton svg{
+    fill: white;
+}
 @media only screen and (max-width: 600px) {
     .menuItems{
      display: none;
