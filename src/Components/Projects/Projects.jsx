@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     '& h1': {
       color: '#CC4865',
       fontSize: "35px",
-      textAlign: "center"
+      textAlign: "center",
+      backgroundColor: "white"
     }
   },
   heroButtons: {
@@ -69,14 +70,14 @@ const useStyles = makeStyles((theme) => ({
 export const Projects = () => {
   const classes = useStyles();
   return (
-    <div id="projects">
+    <div id="projects" className={styles.projects}>
+            <h1>Projects</h1>
       <CssBaseline />
       <main>
-        <div className={classes.heroContent}>
+        {/* <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <h1>Projects</h1>
           </Container>
-        </div>
+        </div> */}
         <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
           <Grid container spacing={3}>

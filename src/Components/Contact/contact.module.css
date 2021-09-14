@@ -1,6 +1,7 @@
 .wrapper {
-  border: solid #e7e7e7 1px;
+  border-top: solid #e7e7e7 1px;
   background-color: #fafafa;
+  box-sizing: border-box;
   margin: 30px 0;
 }
 .wrapper > h1 {
