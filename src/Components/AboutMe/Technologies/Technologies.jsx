@@ -7,7 +7,9 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     width: 80,
     height: 100,
-    // border: "solid blue",
+    borderRadius: "8px",
+    padding: "10px",
+    boxShadow: "0 2px 5px 1px rgb(64 60 67 / 16%)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
@@ -19,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop:"8px"
     }
   },
+  iconButton: {
+    '&:hover': {
+      background:"none"
+    }
+  }
 }));
 
 export const Technologies = ({ data, title }) => {
@@ -26,10 +33,10 @@ export const Technologies = ({ data, title }) => {
   return (
     <div className={styles.container}>
       <h2>{title}</h2>
-      <Grid container className={styles.grid} justifyContent="center">
+      <Grid container className={classes.grid} spacing={3}>
         {data.map((el) => (
           <Grid xs={6} sm={4} md={3} item>
-            <IconButton>
+            <IconButton className={classes.iconButton}>
               <div className={classes.paper}>
                 <img src={el.image} alt="" />
                 <p>{el.name}</p>

@@ -13,15 +13,10 @@
 .container>h2{
     margin-bottom: 10px;
 }
-/* .grid{
-    display: grid;
-    grid-template-columns: 12% 12% 12% 12%;
-    justify-content: space-evenly; 
-} */
 .grid>div img{
     width: 100%;
 }
 
 .container p{
-    font-size: 15px;
+    font-size: 12px;
 }
