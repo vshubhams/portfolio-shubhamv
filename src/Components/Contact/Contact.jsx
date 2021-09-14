@@ -56,7 +56,7 @@ export const Contact = () => {
         <div className={classes.paper}>
             <h2 id="simple-modal-title">Email has been sent successfully.</h2>
             <p id="simple-modal-description">We will reply you soon.</p>
-            <Button onClick={handleClose} className={classes.h6} variant="contained" color="secondary"><Typography color="primary">OK</Typography></Button>
+            <Button onClick={handleClose} className={classes.h6} variant="contained" color="primary"><Typography color="secondary">OK</Typography></Button>
         </div>
     );
 
