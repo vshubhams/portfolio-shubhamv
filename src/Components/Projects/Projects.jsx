@@ -40,9 +40,11 @@ const useStyles = makeStyles((theme) => ({
     // border:"solid red",
   },
   cardMedia: {
+    // border:"solid red",
     paddingTop: "56.25%", // 16:9
   },
   cardContent: {
+    border:"solid white",
     flexGrow: 1,
   },
   footer: {
@@ -86,7 +88,7 @@ export const Projects = () => {
                     </Typography>
                     <div className={styles.techContainer}>
                       {item.techs.map((item) => (
-                        <div>{item}</div>
+                        <div> <img src={item} alt="" /></div>
                       ))}
                     </div>
                   </CardContent>
@@ -120,7 +122,7 @@ const projects = [
     descrip: "Built a front-end web app with two other members to allow users to show products and buy products.",
     gitHub: "https://github.com/vshubhams/Ajio-clone",
     demolink: "http://www.ajioproject.ml/",
-    techs: ["HTML","CSS", "JavaScript"]
+    techs: ["/icons/html.png","/icons/css.png", "/icons/javascript.png"]
   },
   {
     title: "Hyannis Plaza Hotel",
@@ -128,7 +130,7 @@ const projects = [
     descrip: "Built a front-end web app with two other members to allow users to find and book rooms in hotel Hyannis Plaza.",
     gitHub: "https://github.com/vshubhams/Hyannis-Plaza",
     demolink: "https://hyannisplaza.netlify.app/",
-    techs: ["React","Redux", "Material UI","styled-components"]
+    techs: ["/icons/react.png","/icons/redux.png", "/icons/materialui.png"]
   },
   {
     title: "AngelList.com",
@@ -136,6 +138,6 @@ const projects = [
     descrip: "Developed a front-end web app to allow job seekers to find and apply to jobs and recruiters to post new jobs.",
     gitHub: "https://github.com/vshubhams/project-angel",
     demolink: "https://angellist.netlify.app/",
-    techs: ["React","json-server","styled-components"]
+    techs: ["/icons/react.png","/icons/javascript.png"]
   }
 ]

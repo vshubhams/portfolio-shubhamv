@@ -1,11 +1,16 @@
 .techContainer{
  display: flex;   
  flex-wrap: wrap;
+ margin-top: 10px;
+ align-items: center;
 }
 .techContainer>div{
     color: white;
-    margin: 10px 10px 0px 0;
+    margin: 10px 0;
+    width:12%;
     border-radius: 5px;
     padding: 3px 6px;
-    background-color: #e47b92;
+}
+.techContainer>div>img{
+    width: 100%;
 }
