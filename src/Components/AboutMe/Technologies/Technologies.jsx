@@ -33,7 +33,7 @@ export const Technologies = ({ data, title }) => {
   return (
     <div className={styles.container}>
       <h2>{title}</h2>
-      <Grid container className={classes.grid} spacing={3}>
+      <Grid container className={classes.grid} spacing={2} justifyContent="center">
         {data.map((el) => (
           <Grid xs={6} sm={4} md={3} item>
             <IconButton className={classes.iconButton}>

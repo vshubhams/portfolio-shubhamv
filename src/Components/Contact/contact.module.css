@@ -7,7 +7,7 @@
   text-align: center;
   font-size: 35px;
   margin-top: 30px;
-  color: #CC4865;
+  color: #cc4865;
 }
 
 .container {
@@ -39,35 +39,36 @@
 .textBox > h2 {
   margin-bottom: 10px;
 }
-.contactDetails>div{
-    text-align: left;
+.contactDetails > div {
+  text-align: left;
 }
-.contactDetails>div>div{
-    display: flex;
-    margin: 5px;
-    align-items: center;
+.contactDetails > div > div {
+  display: flex;
+  margin: 30px;
+  align-items: center;
 }
-.contactDetails svg{
-    margin-right: 5px;
+.contactDetails svg {
+  margin-right: 5px;
 }
 .textBox > h2 {
-    margin-bottom: 10px;
-  }
-  .iconBox {
-    margin-top: 20px;
-  }
-  .linkedIn svg {
-    fill: #0a66c2;
-  }
-  .gitHub svg {
-    fill: #24292f;
-  }
-  .twitter svg {
-    fill: #1d9bf0;
-  }
-  .info>svg{
-    fill: #CC4865;
-  }
+  margin-bottom: 10px;
+}
+
+.iconBox {
+  margin-top: 20px;
+}
+.linkedIn svg {
+  fill: #0a66c2;
+}
+.gitHub svg {
+  fill: #24292f;
+}
+.twitter svg {
+  fill: #1d9bf0;
+}
+.info > svg {
+  fill: #cc4865;
+}
 @media only screen and (max-width: 600px) {
   .container {
     grid-template-columns: 100%;
