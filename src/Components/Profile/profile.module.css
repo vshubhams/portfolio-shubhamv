@@ -3,7 +3,7 @@ color: #15232D;
 }
 .wrapper{
 /* margin-top: 60px; */
-background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../../images/redcover.png");
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../../images/redcover2.jpg");
 height: 50%;
 background-position: center;
 background-repeat: no-repeat;
@@ -43,6 +43,7 @@ position: relative;
 }
 .descrip{
     text-align: center;
+    font-size: 18px;
     color: white;
 }
 .container>button{
