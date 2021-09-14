@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   heroContent: {
     '& h1': {
       color: '#CC4865',
+      fontSize: "35px",
       textAlign: "center"
     }
   },
