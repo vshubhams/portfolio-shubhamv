@@ -33,17 +33,22 @@ export const Navbar = ({ toggle }) => {
         <div className={styles.right}>
           <div className={styles.menuItems}>
             <div>
-              <NavLinks to="about" spy={true} exact smooth={true} duration={500} offset={-70} >
+              <NavLinks to="about" spy={true} exact smooth={true} duration={500} offset={-80} >
                 About
               </NavLinks>
             </div>
             <div>
-              <NavLinks to="projects" spy={true} exact smooth={true} duration={500} offset={-80} >
+              <NavLinks to="skills" spy={true} exact smooth={true} duration={500} offset={-80} >
+                Skills
+              </NavLinks>
+            </div>
+            <div>
+              <NavLinks to="projects" spy={true} exact smooth={true} duration={500} offset={-90} >
                 Projects
               </NavLinks>
             </div>
             <div>
-              <NavLinks to="contact" spy={true} exact smooth={true} duration={500} offset={-90}>
+              <NavLinks to="contact" spy={true} exact smooth={true} duration={500} offset={-120}>
                 Contact
               </NavLinks>
             </div>
@@ -65,6 +70,7 @@ export const NavLinks = styled(ScrollLink)`
   text-decoration: none; 
   padding: 0 1rem;
   height: 100%;
+  font-size: 15px;
   cursor: pointer; 
 
   &.active {

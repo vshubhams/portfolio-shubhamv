@@ -6,6 +6,8 @@ import { Projects } from './Components/Projects/Projects';
 import Sidebar from "./Components/Sidebar/"
 import { useState } from 'react';
 import { Contact } from './Components/Contact/Contact';
+import { Skills } from './Components/skills/skills';
+import { Top} from './Components/TopButton/Top';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -16,8 +18,10 @@ function App() {
       <Navbar toggle={toggle} />
       <Profile />
       <AboutMe />
+      <Skills />
       <Projects />
       <Contact />
+      <Top />
     </div>
   );
 }

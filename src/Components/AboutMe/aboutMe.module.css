@@ -34,10 +34,12 @@
 
 .imgBox > img {
   width: 100%;
-  /* border: solid red; */
 }
 .textBox > h2 {
   margin-bottom: 10px;
+}
+.textBox >p{
+  font-size: 20px;
 }
 .iconBox {
   margin-top: 20px;
