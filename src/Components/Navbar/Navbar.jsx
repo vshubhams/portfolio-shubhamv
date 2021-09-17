@@ -68,15 +68,18 @@ export const NavLinks = styled(ScrollLink)`
   display: flex;
   align-items: center; 
   text-decoration: none; 
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
+  margin: 0 10px;
   height: 100%;
   font-size: 15px;
-  cursor: pointer; 
+  cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid #FFF
   }
   &:hover{
-    color: black;
+    color: rgba(255, 255, 255, 0.945);
+    transform: scale(1.1);
+    transition:transform .2s;
   }
 `;

@@ -4,11 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles((theme) => ({
-  paper: {
-    width: 80,
+    paper: {
+    width: 100,
     height: 100,
     borderRadius: "8px",
-    padding: "10px",
+    padding: "10px 20px",
     boxShadow: "0 2px 5px 1px rgb(64 60 67 / 16%)",
     display: "flex",
     flexDirection: "column",
@@ -33,7 +33,7 @@ export const Technologies = ({ data, title }) => {
   return (
     <div className={styles.container}>
       <h2>{title}</h2>
-      <Grid container className={classes.grid} spacing={2} justifyContent="center">
+      <Grid container className={classes.grid} spacing={2} justifyContent="center" >
         {data.map((el) => (
           <Grid xs={6} sm={4} md={3} item>
             <IconButton className={classes.iconButton}>
