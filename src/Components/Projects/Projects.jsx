@@ -131,8 +131,8 @@ const projects = [
     title: "Reddit",
     image: "https://raw.githubusercontent.com/ravishukla86044/reddit/master/src/PreviewImageGallery/user.png",
     descrip: "A full-stack app where use can creat post, comment, votes up & down, update profile picture, and create community. It's also has real time chat functionality",
-    gitHub: "https://github.com/vshubhams/project-angel",
-    demolink: "https://angellist.netlify.app/",
+    gitHub: "https://github.com/ravishukla86044/reddit",
+    demolink: "https://reddit-new.netlify.app/",
     techs: ["/icons/javascript.png","/icons/react.png","/icons/redux.png","/icons/nodejs.png","/icons/expressjs.png","/icons/mongodb.png"]
   },
   {
