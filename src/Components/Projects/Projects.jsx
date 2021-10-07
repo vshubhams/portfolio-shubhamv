@@ -128,6 +128,22 @@ export const Projects = () => {
 
 const projects = [
   {
+    title: "Reddit",
+    image: "https://raw.githubusercontent.com/ravishukla86044/reddit/master/src/PreviewImageGallery/user.png",
+    descrip: "A full-stack app where use can creat post, comment, votes up & down, update profile picture, and create community. It's also has real time chat functionality",
+    gitHub: "https://github.com/vshubhams/project-angel",
+    demolink: "https://angellist.netlify.app/",
+    techs: ["/icons/javascript.png","/icons/react.png","/icons/redux.png","/icons/nodejs.png","/icons/expressjs.png","/icons/mongodb.png"]
+  },
+  {
+    title: "AngelList.com",
+    image: "https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
+    descrip: "Developed a front-end web app to allow job seekers to find and apply to jobs and recruiters to post new jobs.",
+    gitHub: "https://github.com/vshubhams/project-angel",
+    demolink: "https://angellist.netlify.app/",
+    techs: ["/icons/react.png","/icons/javascript.png","/icons/styled.png"]
+  },
+  {
     title: "Ajio.com",
     image: "https://raw.githubusercontent.com/vshubhams/Ajio-clone/master/screenshots/Screenshot%20(65).png",
     descrip: "Built a front-end web app with two other members to allow users to show products and buy products.",
@@ -141,14 +157,6 @@ const projects = [
     descrip: "Built a front-end web app with two other members to allow users to find and book rooms in hotel Hyannis Plaza.",
     gitHub: "https://github.com/vshubhams/Hyannis-Plaza",
     demolink: "https://hyannisplaza.netlify.app/",
-    techs: ["/icons/react.png","/icons/redux.png", "/icons/materialui.png"]
-  },
-  {
-    title: "AngelList.com",
-    image: "https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
-    descrip: "Developed a front-end web app to allow job seekers to find and apply to jobs and recruiters to post new jobs.",
-    gitHub: "https://github.com/vshubhams/project-angel",
-    demolink: "https://angellist.netlify.app/",
-    techs: ["/icons/react.png","/icons/javascript.png"]
+    techs: ["/icons/react.png","/icons/redux.png", "/icons/materialui.png","/icons/styled.png"]
   }
 ]
