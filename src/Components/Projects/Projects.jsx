@@ -136,6 +136,14 @@ const projects = [
     techs: ["/icons/javascript.png","/icons/react.png","/icons/redux.png","/icons/nodejs.png","/icons/expressjs.png","/icons/mongodb.png"]
   },
   {
+    title: "Hackathon Project",
+    image: "https://res.cloudinary.com/dwulcntnx/image/upload/v1633976813/freeschool.png",
+    descrip: "Developed a fullstack project within 48 hour to help children to get free education. This project also won at hackathon",
+    gitHub: "https://github.com/Abhi15git/freeschool",
+    demolink: "https://freeschool4u.netlify.app/",
+    techs: ["/icons/javascript.png","/icons/react.png","/icons/redux.png","/icons/nodejs.png","/icons/expressjs.png","/icons/mongodb.png"]
+  },
+  {
     title: "AngelList.com",
     image: "https://raw.githubusercontent.com/vshubhams/project-angel/master/Screenshots/landinPage.PNG",
     descrip: "Developed a front-end web app to allow job seekers to find and apply to jobs and recruiters to post new jobs.",
