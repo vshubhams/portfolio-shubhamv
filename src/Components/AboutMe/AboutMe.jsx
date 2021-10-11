@@ -17,7 +17,7 @@ export const AboutMe = () => {
             <p>
               A dedicated full-stack developer with a specialized skill-set that
               enables me to build robust web applications. I am adept in both
-              front-end and back-end and have an eye for performance an
+              front-end and back-end and have an eye for attention to detail and
               accuracy.
             </p>
             <div className={styles.iconBox}>
