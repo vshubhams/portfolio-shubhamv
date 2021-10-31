@@ -11,7 +11,7 @@
     background: transparent;
 }
 .wrapper.active{
-    background-color: #CC4865;
+    background: linear-gradient(203deg, rgba(209,78,103,1) 53%, rgba(219,89,106,1) 100%);
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
 }
 .container{
@@ -25,9 +25,14 @@
 }
 .left>div{
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 600;
     cursor: pointer;
     color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-family: 'Shojumaru', cursive;
+    padding:10px;
+
 }
 .right{
     display: flex;

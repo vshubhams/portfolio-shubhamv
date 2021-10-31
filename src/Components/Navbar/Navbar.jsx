@@ -22,12 +22,8 @@ export const Navbar = ({ toggle }) => {
     <div className={navbar ? `${styles.wrapper} ${styles.active}` : `${styles.wrapper}`}>
       <div className={styles.container}>
         <div className={styles.left}>
-          <div
-            onClick={() => {
-              animateScroll.scrollToTop();
-            }}
-          >
-            SHUBHAM
+          <div onClick={() => { animateScroll.scrollToTop(); }}>
+            SV
           </div>
         </div>
         <div className={styles.right}>
