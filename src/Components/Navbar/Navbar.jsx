@@ -23,7 +23,7 @@ export const Navbar = ({ toggle }) => {
       <div className={styles.container}>
         <div className={styles.left}>
           <div onClick={() => { animateScroll.scrollToTop(); }}>
-            SV
+            S
           </div>
         </div>
         <div className={styles.right}>
