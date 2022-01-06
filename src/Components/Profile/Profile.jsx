@@ -23,7 +23,7 @@ export const Profile = () => {
                     />
                 </div>
                 <p className={styles.descrip}>
-                    An Aspiring Developer with a passion for developing scalable web applications.
+                    Associate Developer at Sapiens.
                 </p>
                 <button onClick={() => { window.open("https://drive.google.com/file/d/1fZG3oHKl-w7_pPZhHlJxTu7EocHZixVM/view?usp=sharing") }}> <GetAppIcon /> RESUME</button>
             </div>
