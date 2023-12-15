@@ -34,7 +34,7 @@ const techno = [
         image: "/icons/redux.png",
     },
     {
-        name: "Material Ui",
+        name: "MUI",
         image: "/icons/materialui.png",
     },
     {

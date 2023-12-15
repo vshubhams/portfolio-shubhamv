@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 35px;
   margin-top: 30px;
-  color: #cc4865;
+  color: #1171ef;
 }
 
 .container {
@@ -68,7 +68,7 @@
   fill: #1d9bf0;
 }
 .info > svg {
-  fill: #cc4865;
+  fill: #0a66c2;
 }
 @media only screen and (max-width: 600px) {
   .container {

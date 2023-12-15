@@ -11,7 +11,7 @@
     background: transparent;
 }
 .wrapper.active{
-    background: linear-gradient(203deg, rgba(209,78,103,1) 53%, rgba(219,89,106,1) 100%);
+    background: linear-gradient(203deg, #1171ef 53%, #11cdef 100%);
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
 }
 .container{

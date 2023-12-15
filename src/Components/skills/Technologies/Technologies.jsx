@@ -5,13 +5,14 @@ import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-    width: "100px",
-    height: "100px",
+    width: "80px",
+    height: "80px",
     borderRadius: "8px",
     padding: "10px 20px",
     boxShadow: "0 2px 5px 1px rgb(64 60 67 / 16%)",
     display: "flex",
     flexDirection: "column",
+    alignItems:'center',
     justifyContent: "flex-end",
     '&:hover': {
       transform: "scale(1.15)",
@@ -35,7 +36,7 @@ export const Technologies = ({ data, title }) => {
       <h2>{title}</h2>
       <Grid container className={styles.grid} spacing={2} justifyContent="center" >
         {data.map((el) => (
-          <Grid xs={6} sm={4} md={3} item>
+          <Grid xs={6} sm={4} md={2} item>
             <IconButton className={classes.iconButton}>
               <div className={classes.paper}>
                 <img src={el.image} alt="" />

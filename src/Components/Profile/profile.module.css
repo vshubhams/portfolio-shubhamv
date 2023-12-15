@@ -3,9 +3,9 @@ color: #15232D;
 }
 .wrapper{
 /* margin-top: 60px; */
-background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../../images/redcover2.jpg");
+background-image:url("../../images/background.svg");
 height: 50%;
-background-position: center;
+background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
@@ -31,7 +31,7 @@ position: relative;
     margin: 20px 0;
 }
 .myName>span{
-    color: #FFF;
+    color: #1171ef;
 }
 .title{
     font-size: 20px;
@@ -39,17 +39,17 @@ position: relative;
     margin: 20px 0;
 }
 .title>span{
-    color: #FFF;
+    color: #1171ef;
 }
 .descrip{
     text-align: center;
     font-size: 18px;
-    color: white;
+    color: #1171ef;
 }
 .container>button{
     border: none;
     outline: none;
-    color: #CC4865;
+    color: #1171ef;
     display: flex;
     align-items: center;
     background-color: #FFF;
@@ -60,6 +60,6 @@ position: relative;
     font-size: 15px;
 }
 .container>button svg{
-    fill: #CC4865;
+    fill: #1171ef;
     margin-right: 5px;
 }
